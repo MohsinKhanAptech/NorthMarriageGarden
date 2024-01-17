@@ -1,0 +1,256 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--text-50: rgb(244, 243, 240);
+		--text-100: rgb(233, 231, 226);
+		--text-200: rgb(212, 208, 196);
+		--text-300: rgb(190, 184, 167);
+		--text-400: rgb(168, 161, 138);
+		--text-500: rgb(147, 137, 108);
+		--text-600: rgb(117, 110, 87);
+		--text-700: rgb(88, 82, 65);
+		--text-800: rgb(59, 55, 43);
+		--text-900: rgb(29, 27, 22);
+		--text-950: rgb(15, 14, 11);
+
+		--background-50: rgb(245, 243, 240);
+		--background-100: rgb(235, 231, 224);
+		--background-200: rgb(214, 207, 194);
+		--background-300: rgb(194, 184, 163);
+		--background-400: rgb(173, 160, 133);
+		--background-500: rgb(153, 136, 102);
+		--background-600: rgb(122, 109, 82);
+		--background-700: rgb(92, 82, 61);
+		--background-800: rgb(61, 54, 41);
+		--background-900: rgb(31, 27, 20);
+		--background-950: rgb(15, 14, 10);
+
+		--primary-50: rgb(255, 250, 229);
+		--primary-100: rgb(255, 246, 204);
+		--primary-200: rgb(255, 236, 153);
+		--primary-300: rgb(255, 227, 102);
+		--primary-400: rgb(255, 218, 51);
+		--primary-500: rgb(255, 208, 0);
+		--primary-600: rgb(204, 167, 0);
+		--primary-700: rgb(153, 125, 0);
+		--primary-800: rgb(102, 83, 0);
+		--primary-900: rgb(51, 42, 0);
+		--primary-950: rgb(26, 21, 0);
+
+		--secondary-50: rgb(247, 245, 237);
+		--secondary-100: rgb(240, 236, 219);
+		--secondary-200: rgb(224, 216, 184);
+		--secondary-300: rgb(209, 197, 148);
+		--secondary-400: rgb(194, 177, 112);
+		--secondary-500: rgb(179, 158, 77);
+		--secondary-600: rgb(143, 126, 61);
+		--secondary-700: rgb(107, 95, 46);
+		--secondary-800: rgb(71, 63, 31);
+		--secondary-900: rgb(36, 32, 15);
+		--secondary-950: rgb(18, 16, 8);
+
+		--accent-50: rgb(248, 246, 236);
+		--accent-100: rgb(242, 237, 217);
+		--accent-200: rgb(228, 220, 180);
+		--accent-300: rgb(215, 202, 142);
+		--accent-400: rgb(202, 184, 104);
+		--accent-500: rgb(189, 166, 66);
+		--accent-600: rgb(151, 133, 53);
+		--accent-700: rgb(113, 100, 40);
+		--accent-800: rgb(75, 67, 27);
+		--accent-900: rgb(38, 33, 13);
+		--accent-950: rgb(19, 17, 7);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-50: rgb(15, 14, 11);
+		--text-100: rgb(29, 27, 22);
+		--text-200: rgb(59, 55, 43);
+		--text-300: rgb(88, 82, 65);
+		--text-400: rgb(117, 110, 87);
+		--text-500: rgb(147, 137, 108);
+		--text-600: rgb(168, 161, 138);
+		--text-700: rgb(190, 184, 167);
+		--text-800: rgb(212, 208, 196);
+		--text-900: rgb(233, 231, 226);
+		--text-950: rgb(244, 243, 240);
+
+		--background-50: rgb(15, 14, 10);
+		--background-100: rgb(31, 27, 20);
+		--background-200: rgb(61, 54, 41);
+		--background-300: rgb(92, 82, 61);
+		--background-400: rgb(122, 109, 82);
+		--background-500: rgb(153, 136, 102);
+		--background-600: rgb(173, 160, 133);
+		--background-700: rgb(194, 184, 163);
+		--background-800: rgb(214, 207, 194);
+		--background-900: rgb(235, 231, 224);
+		--background-950: rgb(245, 243, 240);
+
+		--primary-50: rgb(26, 21, 0);
+		--primary-100: rgb(51, 42, 0);
+		--primary-200: rgb(102, 83, 0);
+		--primary-300: rgb(153, 125, 0);
+		--primary-400: rgb(204, 167, 0);
+		--primary-500: rgb(255, 208, 0);
+		--primary-600: rgb(255, 218, 51);
+		--primary-700: rgb(255, 227, 102);
+		--primary-800: rgb(255, 236, 153);
+		--primary-900: rgb(255, 246, 204);
+		--primary-950: rgb(255, 250, 229);
+
+		--secondary-50: rgb(18, 16, 8);
+		--secondary-100: rgb(36, 32, 15);
+		--secondary-200: rgb(71, 63, 31);
+		--secondary-300: rgb(107, 95, 46);
+		--secondary-400: rgb(143, 126, 61);
+		--secondary-500: rgb(179, 158, 77);
+		--secondary-600: rgb(194, 177, 112);
+		--secondary-700: rgb(209, 197, 148);
+		--secondary-800: rgb(224, 216, 184);
+		--secondary-900: rgb(240, 236, 219);
+		--secondary-950: rgb(247, 245, 237);
+
+		--accent-50: rgb(19, 17, 7);
+		--accent-100: rgb(38, 33, 13);
+		--accent-200: rgb(75, 67, 27);
+		--accent-300: rgb(113, 100, 40);
+		--accent-400: rgb(151, 133, 53);
+		--accent-500: rgb(189, 166, 66);
+		--accent-600: rgb(202, 184, 104);
+		--accent-700: rgb(215, 202, 142);
+		--accent-800: rgb(228, 220, 180);
+		--accent-900: rgb(242, 237, 217);
+		--accent-950: rgb(248, 246, 236);
+	}
+}
+
+:root {
+	--font-scale: 1.333;
+	--p: 1rem;
+	--h5: calc(var(--p) * var(--font-scale));
+	--h4: calc(var(--h5) * var(--font-scale));
+	--h3: calc(var(--h4) * var(--font-scale));
+	--h2: calc(var(--h3) * var(--font-scale));
+	--h1: calc(var(--h2) * var(--font-scale));
+	--small: calc(var(--p) / var(--font-scale));
+}
+
+body {
+	background-color: var(--background-50);
+	color: var(--text-950);
+	/* TODO: decide a font */
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.nav {
+}
+
+.navlist {
+	list-style-type: none;
+	display: flex;
+}
+
+header {
+	background-color: var(--background-200);
+}
+
+header .navlist {
+	justify-content: end;
+	padding-inline-end: 2rem;
+	padding-block: 0.5rem;
+	font-size: var(--small);
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: var(--background-100);
+	z-index: 5;
+}
+
+nav .navlist {
+	justify-content: center;
+	padding-block: 2rem;
+}
+
+.navlist-dim {
+	color: var(--text-400);
+}
+
+.navlink {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: inherit;
+	padding-block: 0.25rem;
+	padding-inline: 1rem;
+	transition: color 750ms;
+	text-shadow: 0px 0px 0px transparent;
+}
+
+.navlink:hover {
+	color: var(--text-950);
+}
+
+header .navlink:hover {
+	color: var(--text-700);
+}
+
+.navlink i {
+	margin-inline: 0.25rem;
+}
+
+.hamburger-menu {
+	display: none;
+}
+
+main {
+	/* TODO: remove this */
+	min-height: 100vh;
+}
+
+.title {
+	display: grid;
+	place-items: center;
+	height: 85vh;
+	background-color: var(--accent-50);
+}
+
+.main-title {
+	font-size: clamp(var(--h5), 7.5vw, var(--h1));
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+	.hamburger-menu {
+		display: block;
+	}
+
+	nav .navlink:not(.hamburger-menu) {
+		display: none;
+	}
+
+	.link-text:not(.link-text.header-timing) {
+		display: none;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
