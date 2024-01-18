@@ -16,93 +16,98 @@
 		/>
 	</head>
 	<body>
-		<!-- !IMPORTANT TODO: ask him if he even wants a header -->
-		<!-- header containing contact info and opening & closing times -->
-		<header class="nav">
-			<ul class="navlist">
-				<li>
-					<!-- TODO: add correct phone number -->
-					<a class="navlink" href="tel:+923001234567" target="_blank">
-						<i class="fa-solid fa-phone"></i>
-						<span class="link-text">+92-3001234567</span>
-					</a>
-				</li>
-				<li>
-					<!-- TODO: add correct email -->
-					<a class="navlink" href="mailto:example@email.com" target="_blank">
-						<i class="fa-solid fa-envelope"></i>
-						<span class="link-text">NMG@gmail.com</span>
-					</a>
-				</li>
-				<li>
-					<a class="navlink" href="javascript:void(0);">
-						<i class="fa-solid fa-clock"></i>
-						<span class="link-text header-timing">12:00am - 02:00pm</span>
-					</a>
-				</li>
-			</ul>
-		</header>
-		<!-- navbar -->
-		<nav class="nav">
-			<ul id="nav-navlist" class="navlist">
-				<li>
-					<a
-						class="navlink"
-						href="index.html"
-						onmouseover="navlinkDim()"
-						onmouseleave="navlinkDim()"
-						>Home</a
-					>
-				</li>
-				<li>
-					<a
-						class="navlink"
-						href="#facilities"
-						onmouseover="navlinkDim()"
-						onmouseleave="navlinkDim()"
-						>Facilities</a
-					>
-				</li>
-				<li>
-					<a
-						class="navlink"
-						href="#pricing"
-						onmouseover="navlinkDim()"
-						onmouseleave="navlinkDim()"
-						>Pricing</a
-					>
-				</li>
-				<li>
-					<a
-						class="navlink"
-						href="#gallery"
-						onmouseover="navlinkDim()"
-						onmouseleave="navlinkDim()"
-						>Gallery</a
-					>
-				</li>
-				<li>
-					<a
-						class="navlink"
-						href="#contact"
-						onmouseover="navlinkDim()"
-						onmouseleave="navlinkDim()"
-						>Contact</a
-					>
-				</li>
-				<li>
-					<a class="navlink hamburger-menu" href="javascript:void(0);">
-						<i class="fa-solid fa-bars"></i>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- main section -->
-		<main>
+		<div
+			class="nav-container fixed-top"
+			onmouseenter="navShow()"
+			onmouseleave="navShow()"
+		>
+			<!-- !IMPORTANT TODO: ask him if he even wants a header -->
+			<!-- header containing contact info and opening & closing times -->
+			<header class="fixed-top">
+				<ul class="navlist">
+					<li>
+						<!-- TODO: add correct phone number -->
+						<a class="navlink" href="tel:+923001234567" target="_blank">
+							<i class="fa-solid fa-phone"></i>
+							<span class="link-text">+92-3001234567</span>
+						</a>
+					</li>
+					<li>
+						<!-- TODO: add correct email -->
+						<a class="navlink" href="mailto:example@email.com" target="_blank">
+							<i class="fa-solid fa-envelope"></i>
+							<span class="link-text">NMG@gmail.com</span>
+						</a>
+					</li>
+					<li>
+						<a class="navlink" href="javascript:void(0);">
+							<i class="fa-solid fa-clock"></i>
+							<span class="link-text header-timing">12:00am - 02:00pm</span>
+						</a>
+					</li>
+				</ul>
+			</header>
 			<!-- TODO: background carousel/video section with name -->
-			<div class="title">
-				<h1 class="main-title">North Marriage Garden</h1>
+			<div class="title-container">
+				<h1 class="title-text">North Marriage Garden</h1>
 			</div>
-		</main>
+			<!-- navbar -->
+			<nav id="nav" class="nav">
+				<ul id="nav-navlist" class="navlist">
+					<li>
+						<a
+							class="navlink"
+							href="index.html"
+							onmouseover="navlinkDim()"
+							onmouseleave="navlinkDim()"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="navlink"
+							href="#facilities"
+							onmouseover="navlinkDim()"
+							onmouseleave="navlinkDim()"
+							>Facilities</a
+						>
+					</li>
+					<li>
+						<a
+							class="navlink"
+							href="#pricing"
+							onmouseover="navlinkDim()"
+							onmouseleave="navlinkDim()"
+							>Pricing</a
+						>
+					</li>
+					<li>
+						<a
+							class="navlink"
+							href="#gallery"
+							onmouseover="navlinkDim()"
+							onmouseleave="navlinkDim()"
+							>Gallery</a
+						>
+					</li>
+					<li>
+						<a
+							class="navlink"
+							href="#contact"
+							onmouseover="navlinkDim()"
+							onmouseleave="navlinkDim()"
+							>Contact</a
+						>
+					</li>
+					<li>
+						<a class="navlink hamburger-menu" href="javascript:void(0);">
+							<i class="fa-solid fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- main section -->
+		<main></main>
 	</body>
 </html>

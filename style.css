@@ -1,3 +1,4 @@
+/* preferred light theme properties */
 @media (prefers-color-scheme: light) {
 	:root {
 		--text-50: rgb(244, 243, 240);
@@ -59,9 +60,13 @@
 		--accent-800: rgb(75, 67, 27);
 		--accent-900: rgb(38, 33, 13);
 		--accent-950: rgb(19, 17, 7);
+
+		--background-transparent-75: rgba(235, 231, 224, 0.75);
+		--background-transparent-50: rgba(235, 231, 224, 0.5);
+		--background-transparent-25: rgba(235, 231, 224, 0.25);
 	}
 }
-
+/* preferred light theme properties */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text-50: rgb(15, 14, 11);
@@ -123,9 +128,13 @@
 		--accent-800: rgb(228, 220, 180);
 		--accent-900: rgb(242, 237, 217);
 		--accent-950: rgb(248, 246, 236);
+
+		--background-transparent-75: rgba(31, 27, 20, 0.75);
+		--background-transparent-50: rgba(31, 27, 20, 0.5);
+		--background-transparent-25: rgba(31, 27, 20, 0.25);
 	}
 }
-
+/* font properties */
 :root {
 	--font-scale: 1.333;
 	--p: 1rem;
@@ -137,6 +146,8 @@
 	--small: calc(var(--p) / var(--font-scale));
 }
 
+/* body properties and default font family declarations */
+
 body {
 	background-color: var(--background-50);
 	color: var(--text-950);
@@ -145,38 +156,64 @@ body {
 	/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
-.nav {
+/* header nav & title */
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+header {
+	background-color: var(--background-100);
+	padding-inline-end: 2rem;
+	padding-block: 0.5rem;
+	font-size: var(--small);
+	transition: top 500ms;
+}
+
+.scrolled header {
+	top: -2.5rem;
 }
 
 .navlist {
 	list-style-type: none;
 	display: flex;
-}
-
-header {
-	background-color: var(--background-200);
+	justify-content: center;
 }
 
 header .navlist {
 	justify-content: end;
-	padding-inline-end: 2rem;
-	padding-block: 0.5rem;
-	font-size: var(--small);
 }
 
-nav {
-	position: sticky;
-	top: 0;
-	background-color: var(--background-100);
-	z-index: 5;
+header .navlink {
+	padding-block: 0.25rem;
 }
 
-nav .navlist {
-	justify-content: center;
-	padding-block: 2rem;
+.nav {
+	position: relative;
+	bottom: 0;
+	background-color: var(--background-transparent-50);
+	backdrop-filter: blur(1rem);
+	padding-block: 1rem;
+	z-index: 1;
+	transition: bottom 500ms 750ms;
+}
+
+.scrolled .nav {
+	bottom: 5rem;
+	padding-block: 0;
+}
+
+.scrolled .nav.nav-show {
+	transition-delay: 0ms;
+	bottom: 0;
 }
 
 .navlist-dim {
+	/* added by javascript to dim non-active navlinks on hover */
 	color: var(--text-400);
 }
 
@@ -186,16 +223,16 @@ nav .navlist {
 	text-decoration: none;
 	text-transform: capitalize;
 	color: inherit;
-	padding-block: 0.25rem;
-	padding-inline: 1rem;
-	transition: color 750ms;
-	text-shadow: 0px 0px 0px transparent;
+	padding-block: 1rem;
+	padding-inline: 1.5rem;
+	transition: color 500ms;
 }
 
 .navlink:hover {
 	color: var(--text-950);
 }
 
+/* WHAT-TODO? */
 header .navlink:hover {
 	color: var(--text-700);
 }
@@ -210,18 +247,26 @@ header .navlink:hover {
 
 main {
 	/* TODO: remove this */
-	min-height: 100vh;
-}
-
-.title {
-	display: grid;
-	place-items: center;
-	height: 85vh;
+	min-height: 1100vh;
 	background-color: var(--accent-50);
 }
 
-.main-title {
+.title-container {
+	position: relative;
+	display: grid;
+	place-items: center;
+	height: 80vh;
+	background-color: var(--background-50);
 	font-size: clamp(var(--h5), 7.5vw, var(--h1));
+	z-index: 2;
+	transition: font-size 500ms, line-height 500ms, height 500ms;
+}
+
+.scrolled .title-container {
+	height: 5rem;
+	padding-block: 1rem;
+	font-size: clamp(var(--h5), 7.5vw, var(--h3));
+	line-height: var(--h5);
 }
 
 /* Extra small devices (phones, 600px and down) */
