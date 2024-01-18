@@ -4,7 +4,7 @@
 
 ## To-do's
 
-- [x] have a rough project design idea
+- [x] ~~_have a rough project design idea_~~
 - [ ] finalize the color scheme ( white, black, golden )
 - [ ] finalize the website layout
 - [ ] make it responsive
