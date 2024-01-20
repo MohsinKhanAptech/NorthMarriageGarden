@@ -149,6 +149,8 @@
 /* body properties and default font family declarations */
 
 body {
+	/* TODO: make scroll-to-top work */
+	scroll-behavior: smooth;
 	background-color: var(--background-50);
 	color: var(--text-950);
 	/* TODO: decide a font */
@@ -164,6 +166,11 @@ body {
 	left: 0;
 	right: 0;
 	z-index: 10;
+}
+
+.center-children {
+	display: grid;
+	place-items: center;
 }
 
 header {
@@ -199,7 +206,7 @@ header .navlink {
 	backdrop-filter: blur(1rem);
 	padding-block: 1rem;
 	z-index: 1;
-	transition: bottom 500ms 750ms;
+	transition: bottom 500ms;
 }
 
 .scrolled .nav {
@@ -208,7 +215,6 @@ header .navlink {
 }
 
 .scrolled .nav.nav-show {
-	transition-delay: 0ms;
 	bottom: 0;
 }
 
@@ -246,15 +252,13 @@ header .navlink:hover {
 }
 
 main {
-	/* TODO: remove this */
-	min-height: 1100vh;
+	/* TODO: remove this height property */
+	min-height: 200vh;
 	background-color: var(--accent-50);
 }
 
 .title-container {
 	position: relative;
-	display: grid;
-	place-items: center;
 	height: 80vh;
 	background-color: var(--background-50);
 	font-size: clamp(var(--h5), 7.5vw, var(--h1));
@@ -267,6 +271,19 @@ main {
 	padding-block: 1rem;
 	font-size: clamp(var(--h5), 7.5vw, var(--h3));
 	line-height: var(--h5);
+}
+
+.scroll-to-top-container {
+	cursor: pointer;
+	padding-block: 2rem;
+}
+
+.scroll-to-top {
+	text-align: center;
+}
+
+.scroll-to-top i {
+	font-size: var(--h3);
 }
 
 /* Extra small devices (phones, 600px and down) */

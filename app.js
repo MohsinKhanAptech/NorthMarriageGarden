@@ -1,15 +1,22 @@
+// Variable declarations
+let navlinks = document.querySelectorAll(".navlink");
+let navContainer = document.querySelector(".nav-container");
+let header = document.querySelector("header.nav");
+let nav = document.querySelector(".nav");
+let scrollToTopBtn = document.querySelector(".scroll-to-top-container");
+
 // Function to dim the non-active navlinks when hovering on a navlink
-function navlinkDim(navlist) {
+navlinks.forEach((navlink) => {
+	navlink.addEventListener("mouseenter", navlinkDim);
+	navlink.addEventListener("mouseleave", navlinkDim);
+});
+function navlinkDim() {
 	document.getElementById("nav-navlist").classList.toggle("navlist-dim");
 }
 
 // Function to make logo smaller while scrolling
-let scrollpos = window.scrollY;
-let navContainer = document.querySelector(".nav-container");
-let header = document.querySelector("header.nav");
-
 window.addEventListener("scroll", function () {
-	scrollpos = window.scrollY;
+	let scrollpos = window.scrollY;
 
 	if (scrollpos > 0) {
 		navContainer.classList.add("scrolled");
@@ -18,12 +25,17 @@ window.addEventListener("scroll", function () {
 		navContainer.classList.remove("scrolled");
 		header.classList.remove("scrolled");
 	}
-
-	console.log(scrollpos);
 });
 
-// Function
-let nav = document.querySelector(".nav");
+// Function to show nav on hover
+navContainer.addEventListener("mouseenter", navShow);
+navContainer.addEventListener("mouseleave", navShow);
 function navShow() {
 	nav.classList.toggle("nav-show");
+}
+
+// Function to smooth scroll to top
+scrollToTopBtn.addEventListener("click", scrollToTop);
+function scrollToTop() {
+	window.scrollTo({ top: 0, behavior: "smooth" });
 }
