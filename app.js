@@ -1,7 +1,7 @@
 // Variable declarations
 let navlinks = document.querySelectorAll("nav .navlink");
-let navContainer = document.querySelector(".nav-container");
-let header = document.querySelector("header.nav");
+let navContainer = document.querySelector(".header-container");
+let header = document.querySelector("header");
 let nav = document.querySelector(".nav");
 let scrollToTopBtn = document.querySelector(".scroll-to-top-container");
 
