@@ -1,6 +1,6 @@
-# Website for North Marriage Garden
+# North Marriage Garden Website
 
-- [Website for North Marriage Garden](#website-for-north-marriage-garden)
+- [North Marriage Garden Website](#north-marriage-garden-website)
   - [About](#about)
   - [To-do's](#to-dos)
   - [Project Timeline](#project-timeline)
@@ -44,6 +44,9 @@ I'll be documenting my progress here on github.&nbsp;&nbsp; ( ^\_^ )
 
 ### timeline
 
+- 🔵 | 28/01/2024 -
+  - fixed javascript error and optimized css
+  - started planing for gallery, location, socials and footer sections
 - 🔵 | 27/01/2024 -
   - color scheme finalized ( finally 😭. i think it looks pretty good )
 - ⚪ | 21/01/2024 - 26/01/2024 - ( i was learning linux and neovim )
