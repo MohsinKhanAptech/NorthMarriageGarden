@@ -19,10 +19,16 @@ I'll be documenting my progress here on github.&nbsp;&nbsp; ( ^\_^ )
 
 ## To-do's
 
-- [x] ~~_have a rough project design idea_~~
-- [x] ~~_finalize the color scheme ( white, black, golden, rose gold )_~~
+- [ ] contact us section with form
+- [ ] about us section ( intro about NMG )
+- [ ] venue facilities
+- [ ] location section with google maps iframe
+- [ ] socials section / social links in footer section
+- [ ] gallery section with images of different events
 - [ ] finalize the website layout
 - [ ] make it responsive
+- [x] ~~_have a rough project design idea_~~
+- [x] ~~_finalize the color scheme ( white, black, golden, rose gold )_~~
 
 ## Project Timeline
 
