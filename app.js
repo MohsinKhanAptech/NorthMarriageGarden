@@ -1,5 +1,5 @@
 // Variable declarations
-let navlinks = document.querySelectorAll(".navlink");
+let navlinks = document.querySelectorAll("nav .navlink");
 let navContainer = document.querySelector(".nav-container");
 let header = document.querySelector("header.nav");
 let nav = document.querySelector(".nav");

@@ -172,6 +172,12 @@ body {
 	place-items: center;
 }
 
+.nav-container {
+	display: flex;
+	flex-direction: column;
+	max-height: 100vh;
+}
+
 header {
 	background-color: var(--background-100);
 	padding-inline-end: 2rem;
@@ -205,7 +211,7 @@ header .navlink {
 	backdrop-filter: blur(1rem);
 	padding-block: 1rem;
 	z-index: 1;
-	transition: bottom 500ms 500ms;
+	transition: bottom 500ms;
 }
 
 .scrolled .nav {
@@ -214,7 +220,6 @@ header .navlink {
 }
 
 .scrolled .nav.nav-show {
-	transition: bottom 500ms 0s;
 	bottom: 0;
 }
 
@@ -259,7 +264,7 @@ main {
 
 .title-container {
 	position: relative;
-	height: 80vh;
+	height: 100vh;
 	background-color: var(--background-50);
 	font-size: clamp(var(--h5), 7.5vw, var(--h1));
 	z-index: 2;
