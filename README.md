@@ -44,6 +44,9 @@ I'll be documenting my progress here on github.&nbsp;&nbsp; ( ^\_^ )
 
 ### timeline
 
+- 🟢 | 30/01/2024 -
+  - added main, gallery, location, contact us, socials and footer sections 🥱
+- ⚪ | 29/01/2024 -
 - 🔵 | 28/01/2024 -
   - fixed javascript error and optimized css
   - started planing for gallery, location, socials and footer sections
