@@ -238,7 +238,7 @@ header .navlist {
 
 .navlist-dim {
 	/* added by javascript to dim non-active navlinks on hover */
-	color: var(--text-600);
+	color: var(--text-500);
 }
 
 .navlink {

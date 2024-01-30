@@ -1,5 +1,6 @@
 // Variable declarations
 let navlinks = document.querySelectorAll("nav .navlink");
+let navlist = document.querySelector("nav > .navlist");
 let navContainer = document.querySelector(".header-container");
 let header = document.querySelector("header");
 let nav = document.querySelector(".nav");
@@ -11,11 +12,17 @@ navlinks.forEach((navlink) => {
 	navlink.addEventListener("mouseleave", navlinkDim);
 });
 function navlinkDim() {
-	document.getElementById("nav-navlist").classList.toggle("navlist-dim");
+	navlist.classList.toggle("navlist-dim");
 }
 
 // Function to make logo smaller while scrolling
+scrollUpdate();
+
 window.addEventListener("scroll", function () {
+	scrollUpdate();
+});
+
+function scrollUpdate() {
 	let scrollpos = window.scrollY;
 
 	if (scrollpos > 0) {
@@ -25,13 +32,16 @@ window.addEventListener("scroll", function () {
 		navContainer.classList.remove("scrolled");
 		header.classList.remove("scrolled");
 	}
-});
+}
 
 // Function to show nav on hover
 navContainer.addEventListener("mouseenter", navShow);
-navContainer.addEventListener("mouseleave", navShow);
+navContainer.addEventListener("mouseleave", navHide);
 function navShow() {
-	nav.classList.toggle("nav-show");
+	nav.classList.add("nav-show");
+}
+function navHide() {
+	nav.classList.remove("nav-show");
 }
 
 // Function to smooth scroll to top
