@@ -171,10 +171,41 @@
 	place-items: center;
 }
 
+main {
+	/* TODO: remove main or fix below */
+	min-height: 110dvh;
+	margin-block-end: 2rem;
+	background: var(--background-50);
+	background: linear-gradient(180deg, transparent, 75%, var(--background-50)),
+		linear-gradient(45deg, var(--accent-600), var(--primary-600));
+	background-size: 400%;
+	box-shadow: 0px -1px 0px var(--background-50) inset;
+	animation: tempanim 10s infinite forwards;
+}
+/* TODO: replace this animation with video */
+@keyframes tempanim {
+	0%,
+	100% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+}
+
 section {
-	min-height: 100dvh;
-	/* TODO: remove this. temporary color */
-	background-color: var(--background-800);
+	/* min-height: 70dvh; */
+	padding-block: 5rem 6rem;
+	/* TODO: remove this. temporary background color */
+	/* background-color: var(--background-100); */
+}
+
+hr {
+	border: none;
+	background-color: var(--background-400);
+	height: 1px;
+	width: 80%;
+	margin: auto;
 }
 
 /* body properties and default font family declarations */
@@ -197,13 +228,13 @@ body {
 }
 
 header {
-	background-color: var(--background-100);
+	background-color: var(--background-transparent-75);
 	font-size: var(--small);
 	transition: top 500ms;
 }
 
 .scrolled header {
-	top: -2.5rem;
+	top: -3rem;
 }
 
 .navlist {
@@ -221,19 +252,22 @@ header .navlist {
 	position: relative;
 	bottom: 0;
 	background-color: var(--background-transparent-75);
+	/* TODO: tune backdrop blur */
 	backdrop-filter: blur(1rem);
 	padding-block: 1rem;
 	z-index: 1;
-	transition: bottom 500ms;
+	transition: bottom 500ms 0s;
 }
 
 .scrolled .nav {
-	bottom: 5rem;
+	bottom: 3.5rem;
 	padding-block: 0;
+	transition: bottom 500ms 500ms;
 }
 
 .scrolled .nav.nav-show {
 	bottom: 0;
+	transition: bottom 500ms 0s;
 }
 
 .navlist-dim {
@@ -252,43 +286,172 @@ header .navlist {
 	transition: color 500ms;
 }
 
-.navlink:hover {
+header .navlink {
+	transition: color 250ms;
+}
+
+.navlink:hover,
+.navlink:active {
 	color: var(--text-950);
 }
 
 /* WHAT-TODO? */
-header .navlink:hover {
-	color: var(--text-700);
+header .navlink:hover,
+header .navlink:active {
+	color: var(--accent-500);
 }
 
 .navlink i {
 	margin-inline: 0.25rem;
 }
 
-.hamburger-menu {
-	display: none;
-}
-
 .title-container {
 	position: relative;
-	height: 100dvh;
-	background-color: var(--background-50);
+	height: 80rem;
+	background-color: var(--background-transparent-25);
 	font-size: clamp(var(--h5), 7.5vw, var(--h1));
 	text-align: center;
 	z-index: 2;
-	transition: font-size 500ms, line-height 500ms, height 500ms;
+	transition: font-size 500ms, line-height 500ms, height 500ms,
+		background-color 500ms;
 }
 
 .scrolled .title-container {
 	height: 5rem;
-	padding-block: 1rem;
+	background-color: var(--background-50);
 	font-size: clamp(var(--h5), 7.5vw, var(--h3));
 	line-height: var(--h5);
 }
 
+/* gallery section */
+
+/* TODO: replace the image placeholders with images
+and fix this up  */
+
+.img-container {
+	display: grid;
+	grid-template-columns: repeat(3, 15vw);
+	grid-auto-rows: 15vw;
+	gap: 1rem;
+}
+
+.img-container > div {
+	background: linear-gradient(45deg, var(--accent-600), var(--primary-600));
+}
+
+.img-container > div:nth-child(3) {
+	grid-column: 1 / span 2;
+}
+
+.img-container > div:nth-child(4) {
+	grid-row: 1 / span 2;
+	grid-column: 3 / 4;
+}
+
+/* location section */
+
+.location,
+.socials,
+.gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	place-items: center;
+}
+
+/* contact us section */
+
+.form-control {
+	font-size: var(--p);
+	padding: 0.5rem;
+	border: none;
+	border-radius: 3px;
+	min-width: 0;
+}
+
+.section-title {
+	font-size: clamp(var(--h4), 7.5vw, var(--h2));
+	text-align: center;
+	padding-block-end: var(--h2);
+}
+
+.contact_us_form {
+	/* display: flex;
+	flex-direction: column; */
+	display: grid;
+	gap: 1rem;
+	padding-inline: 1rem;
+}
+
+.contact_us_form .row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.contact_us_form textarea {
+	resize: vertical;
+}
+
+/* socials section */
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.social-links a {
+	display: block;
+	color: var(--secondary-500);
+	font-size: clamp(var(--h5), 5vw, var(--h4));
+	text-decoration: none;
+	padding: 1rem;
+	/* border-radius: 3px; */
+	transition: background-color 250ms, color 250ms;
+	transition: all 250ms;
+	border: 1px solid transparent;
+}
+
+.social-links a:hover,
+.social-links a:active {
+	/* TODO: figure out how to style the buttons/links */
+	/* color: var(--primary-600); */
+	/* box-shadow: var(--background-500) 0px 5px 10px -5px;
+	translate: 0 -4px; */
+	box-shadow: 4px 4px 0px black;
+	translate: -4px -4px;
+	border: 1px solid black;
+}
+
+/* footer section */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	/* background-color: var(--background-100); */
+	padding-block: 5rem;
+}
+
+footer .title-text {
+	font-size: clamp(var(--h5), 7.5vw, var(--h2));
+}
+
+footer p {
+	font-size: clamp(var(--small), 3vw, var(--p));
+	font-weight: 100;
+}
+
+/* scroll to top */
+
 .scroll-to-top-container {
 	cursor: pointer;
-	padding-block: 2rem;
+	padding-block-end: 3rem;
 	text-align: center;
 }
 
