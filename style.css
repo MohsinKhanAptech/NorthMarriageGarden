@@ -65,6 +65,10 @@
 		--background-transparent-50: #f2f2f280;
 		--background-transparent-25: #f2f2f2a8;
 	}
+
+	.calendar iframe {
+		filter: hue-rotate(125deg) contrast(90%) saturate(100%);
+	}
 }
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -131,6 +135,14 @@
 		--background-transparent-75: #0d0d0dbd;
 		--background-transparent-50: #0d0d0d80;
 		--background-transparent-25: #0d0d0da8;
+	}
+
+	.calendar iframe {
+		filter: hue-rotate(300deg) contrast(90%) invert(1);
+	}
+
+	.location iframe {
+		filter: hue-rotate(175deg) invert(1) contrast(90%);
 	}
 }
 /* font properties */
@@ -321,6 +333,12 @@ header .navlink:active {
 	background-color: var(--background-50);
 	font-size: clamp(var(--h5), 7.5vw, var(--h3));
 	line-height: var(--h5);
+}
+
+/* calendar section */
+
+.calendar {
+	padding-inline: 1rem;
 }
 
 /* gallery section */
