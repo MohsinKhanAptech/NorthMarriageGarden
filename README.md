@@ -44,6 +44,10 @@ I'll be documenting my progress here on github.&nbsp;&nbsp; ( ^\_^ )
 
 ### timeline
 
+- 🔵 | 02/02/2024 -
+  - js optimization
+  - css optimization
+- ⚪ | 01/02/2024 -
 - 🟢 | 31/01/2024 -
   - calendar section added
   - styled calendar and location iframes
