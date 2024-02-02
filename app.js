@@ -2,7 +2,6 @@
 let navlinks = document.querySelectorAll("nav .navlink");
 let navlist = document.querySelector("nav > .navlist");
 let navContainer = document.querySelector(".header-container");
-let header = document.querySelector("header");
 let nav = document.querySelector(".nav");
 let scrollToTopBtn = document.querySelector(".scroll-to-top-container");
 
@@ -27,10 +26,8 @@ function scrollUpdate() {
 
 	if (scrollpos > 0) {
 		navContainer.classList.add("scrolled");
-		header.classList.add("scrolled");
 	} else {
 		navContainer.classList.remove("scrolled");
-		header.classList.remove("scrolled");
 	}
 }
 
