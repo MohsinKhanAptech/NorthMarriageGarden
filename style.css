@@ -188,28 +188,13 @@ main {
 	min-height: 110dvh;
 	margin-block-end: 2rem;
 	background: var(--background-50);
-	background: linear-gradient(180deg, transparent, 75%, var(--background-50)),
+	background: linear-gradient(0deg, var(--background-50), transparent 20%),
 		linear-gradient(45deg, var(--accent-600), var(--primary-600));
-	background-size: 400%;
-	box-shadow: 0px -1px 0px var(--background-50) inset;
-	animation: tempanim 10s infinite forwards;
-}
-/* TODO: replace this animation with video */
-@keyframes tempanim {
-	0%,
-	100% {
-		background-position: 0%;
-	}
-	50% {
-		background-position: 100%;
-	}
 }
 
 section {
 	/* min-height: 70dvh; */
 	padding-block: 5rem 6rem;
-	/* TODO: remove this. temporary background color */
-	/* background-color: var(--background-100); */
 }
 
 hr {
@@ -228,7 +213,6 @@ body {
 	color: var(--text-950);
 	/* TODO: decide a font */
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 /* header nav & title */
@@ -236,7 +220,12 @@ body {
 .header-container {
 	display: flex;
 	flex-direction: column;
-	max-height: 100dvh;
+	height: 100dvh;
+	transition: height 500ms;
+}
+
+.header-container.scrolled {
+	height: 8rem;
 }
 
 header {
@@ -257,12 +246,10 @@ header {
 
 header .navlist {
 	justify-content: end;
-	max-width: 1200px;
 }
 
 .nav {
-	position: relative;
-	bottom: 0;
+	translate: 0 0;
 	background-color: var(--background-transparent-75);
 	/* TODO: tune backdrop blur */
 	backdrop-filter: blur(1rem);
@@ -272,14 +259,14 @@ header .navlist {
 }
 
 .scrolled .nav {
-	bottom: 3.5rem;
+	translate: 0 -3.5rem;
 	padding-block: 0;
-	transition: bottom 500ms 500ms;
+	transition: translate 500ms 500ms;
 }
 
 .scrolled .nav.nav-show {
-	bottom: 0;
-	transition: bottom 500ms 0s;
+	translate: 0 0;
+	transition: translate 500ms 0s;
 }
 
 .navlist-dim {
@@ -318,21 +305,17 @@ header .navlink:active {
 }
 
 .title-container {
-	position: relative;
-	height: 80rem;
+	flex: 1 1;
 	background-color: var(--background-transparent-25);
 	font-size: clamp(var(--h5), 7.5vw, var(--h1));
 	text-align: center;
 	z-index: 2;
-	transition: font-size 500ms, line-height 500ms, height 500ms,
-		background-color 500ms;
+	transition: font-size 500ms, background-color 500ms;
 }
 
 .scrolled .title-container {
-	height: 5rem;
 	background-color: var(--background-50);
 	font-size: clamp(var(--h5), 7.5vw, var(--h3));
-	line-height: var(--h5);
 }
 
 /* calendar section */
