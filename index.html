@@ -17,7 +17,6 @@
 	</head>
 	<body>
 		<div class="header-container fixed-top">
-			<!-- !IMPORTANT TODO: ask him if he even wants a header -->
 			<!-- header containing contact info and opening & closing times -->
 			<header class="container fixed-top">
 				<ul class="navlist">
@@ -45,25 +44,38 @@
 			</header>
 			<!-- TODO: background carousel/video section with name -->
 			<div class="container title-container">
-				<h1 class="title-text">North Marriage Garden</h1>
+				<h1 class="title-text">
+					<a href="index.html">North Marriage Garden</a>
+				</h1>
+			</div>
+			<!-- hamburger menu -->
+			<div class="nav-icon-container">
+				<div id="nav-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 			<!-- navbar -->
 			<nav id="nav" class="nav">
 				<ul class="navlist">
 					<li>
-						<a class="navlink" href="index.html">Home</a>
-					</li>
-					<li>
-						<a class="navlink" href="#facilities">Facilities</a>
-					</li>
-					<li>
-						<a class="navlink" href="#pricing">Pricing</a>
+						<a class="navlink" href="#about">About</a>
 					</li>
 					<li>
 						<a class="navlink" href="#gallery">Gallery</a>
 					</li>
 					<li>
-						<a class="navlink" href="#contact">Contact</a>
+						<a class="navlink" href="#calendar">Bookings</a>
+					</li>
+					<li>
+						<a class="navlink" href="#contact">Contact Us</a>
+					</li>
+					<li>
+						<a class="navlink" href="#location">Location</a>
+					</li>
+					<li>
+						<a class="navlink" href="#socials">Socials</a>
 					</li>
 				</ul>
 			</nav>
@@ -74,7 +86,7 @@
 			<video src="vid.mp4" muted autoplay loop></video>
 		</main>
 		<!-- about section -->
-		<section class="container">
+		<section id="about" class="container">
 			<div class="about">
 				<h2 class="section-title">About Us</h2>
 				<p>
@@ -94,7 +106,7 @@
 			</div>
 		</section>
 		<!-- gallery section -->
-		<section class="container">
+		<section id="gallery" class="container">
 			<div class="gallery">
 				<h2 class="section-title">Events Gallery</h2>
 				<div class="img-container">
@@ -106,7 +118,7 @@
 			</div>
 		</section>
 		<!-- calendar section -->
-		<section class="container">
+		<section id="calendar" class="container">
 			<div class="calendar">
 				<h2 class="section-title">Pick A Date</h2>
 				<iframe
@@ -121,7 +133,7 @@
 			</div>
 		</section>
 		<!-- contact us section -->
-		<section class="container">
+		<section id="contact" class="container">
 			<div class="contact_us">
 				<h2 class="section-title">Contact Us</h2>
 				<form action="" class="contact_us_form">
@@ -152,11 +164,19 @@
 						placeholder="Message"
 						rows="8"
 					></textarea>
+					<div class="row">
+						<button class="form-control btn btn-reset" type="reset">
+							Reset
+						</button>
+						<button class="form-control btn btn-submit" type="submit">
+							Submit
+						</button>
+					</div>
 				</form>
 			</div>
 		</section>
 		<!-- location section -->
-		<section class="location">
+		<section id="location" class="location">
 			<h2 class="section-title">Location</h2>
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.562507482116!2d67.04780541178529!3d24.94696957778071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340813dc70c37%3A0xe503df5734802d4a!2sNorth%20Marriage%20Garden!5e0!3m2!1sen!2s!4v1706608119092!5m2!1sen!2s"
@@ -170,7 +190,7 @@
 			></iframe>
 		</section>
 		<!-- socials section -->
-		<section class="container">
+		<section id="socials" class="container">
 			<div class="socials">
 				<h2 class="section-title">Follow Us</h2>
 				<div class="social-links">
@@ -194,7 +214,7 @@
 		</footer>
 		<!-- TODO: make it look better -->
 		<div class="container scroll-to-top-container" role="button">
-			<div class="scroll-to-top">
+			<div class="scroll-to-top btn">
 				<i class="fa-solid fa-chevron-up"></i>
 				<div class="text">TOP</div>
 			</div>
