@@ -19,16 +19,10 @@ I'll be documenting my progress here on github.&nbsp;&nbsp; ( ^\_^ )
 
 ## To-do's
 
-- [ ] about us section ( intro about NMG )
 - [ ] venue facilities
 - [ ] finalize the website layout
-- [ ] make it responsive
-- [x] ~~_socials section / social links in footer section_~~
-- [x] ~~_gallery section with images of different events_~~
-- [x] ~~_location section with google maps iframe_~~
-- [x] ~~_contact us section with form_~~
-- [x] ~~_have a rough project design idea_~~
-- [x] ~~_finalize the color scheme ( white, black, golden, rose gold )_~~
+- [x] ~~_make it responsive_~~
+- [x] ~~_about us section ( intro about NMG )_~~
 
 ## Project Timeline
 
@@ -44,13 +38,17 @@ I'll be documenting my progress here on github.&nbsp;&nbsp; ( ^\_^ )
 
 ### timeline
 
+- 🟢 | 01/03/20224 - 03/03/2024
+  - made website responsive
+  - added about us section
+  - added contact us form submit and reset button
 - 🔵 | 02/02/2024 -
   - js optimization
   - css optimization
 - ⚪ | 01/02/2024 -
 - 🟢 | 31/01/2024 -
   - calendar section added
-  - styled calendar and location iframes
+  - styled calendar and location iframe
 - 🟢 | 30/01/2024 -
   - added main, gallery, location, contact us, socials and footer sections 🥱
 - ⚪ | 29/01/2024 -
