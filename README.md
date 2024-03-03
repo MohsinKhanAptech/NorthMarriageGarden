@@ -9,9 +9,9 @@
 
 ## About
 
-I am making a website for a friend's banquet hall \
-I'll have to design and develop the whole website alone \
-it's a good opportunity to work my skills on a real "professional" project \
+I am making this website for a friend \
+I'll be designing and developing the whole website alone \
+it's a good opportunity to work my skills on a real project \
 ( all my past projects were for Aptech E-Projects or assignments ) \
 I'll be documenting my progress here on github.&nbsp;&nbsp; ( ^\_^ )
 
